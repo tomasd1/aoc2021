@@ -14,6 +14,7 @@ for line in lines:
 print(acc["depth"]*acc["pos"])
 
 # PART 2
+acc = {"depth": 0, "pos": 0, "aim": 0}
 def down(n): acc["aim"] += n
 def up(n): acc["aim"] -= n
 def forward(n): acc["pos"] += n; acc["depth"] += acc["aim"] * n;
